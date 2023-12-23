@@ -58,10 +58,6 @@ public class ConsoleExercises {
     // The area of a rectangle is equal to the length times the width,
     // and the perimeter of a rectangle is equal to 2 times the length plus 2 times the width.
 
-
-
-
-
         }
     }
 }
