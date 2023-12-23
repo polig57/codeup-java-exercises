@@ -27,10 +27,41 @@ public class ConsoleExercises {
         {
         // Prompt a user to enter a sentence, then store that sentence in a
         // String variable using the next method. Then, display that sentence back to the user.
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Enter a sentence: ");
+//        String userSentence = scanner.nextLine();
+//        System.out.format("Your sentence: %s", userSentence);
+        }
+        {
+                // Calculate the perimeter and area of a room.
+// Prompt the user to enter values of length and width of a room (or your room if virtual).
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter a sentence: ");
-        String userSentence = scanner.nextLine();
-        System.out.format("Your sentence: %s", userSentence);
+        System.out.println("Enter Values of LENGTH and WIDTH of a Room");
+
+// Use the nextLine method each time you need to get user input.
+        String userInputLength = scanner.nextLine();
+        String userInputWidth = scanner.nextLine();
+
+
+
+// In this case, we need it twice, once to get the user input for the length and again to get the user input for the width.
+    // Parse the resulting strings to a numeric type.
+        int userRoomArea = Integer.parseInt(userInputLength) * Integer.parseInt(userInputWidth);
+        int userRoomPerimeter = (Integer.parseInt(userInputLength) * 2) + (Integer.parseInt(userInputWidth) * 2);
+
+        System.out.println("Area of the Room is: " + userRoomArea);
+        System.out.println("Perimeter of the Room is: " + userRoomPerimeter);
+
+    // Assume that the rooms are perfect rectangles.
+    // Assume that the user will enter valid numeric data for length and width.
+    // Display the area and perimeter of that classroom.
+    // The area of a rectangle is equal to the length times the width,
+    // and the perimeter of a rectangle is equal to 2 times the length plus 2 times the width.
+
+
+
+
+
         }
     }
 }
