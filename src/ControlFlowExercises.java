@@ -92,28 +92,25 @@ public class ControlFlowExercises {
     //Assume that the user will enter valid data.
     //Only continue if the user agrees to.
 
-           {
-               Scanner scanner = new Scanner(System.in);
-
-               System.out.println("Enter an Integer: ");
-               int userInt = scanner.nextInt();
-
-
-               String tableRow1 = "number | squared | cubed";
-               String tableRow2 = "------ | ------- | -----";
-
-               System.out.println(tableRow1);
-               System.out.println(tableRow2);
-//               System.out.println(userInt);
-
-               for (int i = 1; i <= userInt; i++) {
-                   int iSquared = i * i;
-                   int iCubed = i * iSquared;
-                   System.out.format("%s      | %s       | %s    \n", i, iSquared, iCubed);
-               }
-           }
-
-
+//           {
+//               Scanner scanner = new Scanner(System.in);
+//
+//               System.out.println("Enter an Integer: ");
+//               int userInt = scanner.nextInt();
+//
+//
+//               String tableRow1 = "number | squared | cubed";
+//               String tableRow2 = "------ | ------- | -----";
+//
+//               System.out.println(tableRow1);
+//               System.out.println(tableRow2);
+//
+//               for (int i = 1; i <= userInt; i++) {
+//                   int iSquared = i * i;
+//                   int iCubed = i * iSquared;
+//                   System.out.format("%s      | %s       | %s    \n", i, iSquared, iCubed);
+//               }
+//           }
 
 //---------------------------Convert given number grades into letter grades------------------------------
     //Prompt the user for a numerical grade from 0 to 100.
@@ -121,6 +118,32 @@ public class ControlFlowExercises {
     //Prompt the user to continue.
     //Assume that the user will enter valid integers for the grades.
     //The application should only continue if the user agrees to.
+           {
+               Scanner scanner = new Scanner(System.in);
+               System.out.println("Enter a numerical grade between 0 - 100");
+               int userEnteredGrade = scanner.nextInt();
+               System.out.println("Do you want to continue? (y/n): ");
+               String userContinue = scanner.next();
+
+               if (userContinue.equals("y")) {
+                   if (userEnteredGrade >= 0 && userEnteredGrade <= 59) {
+                       System.out.println("F");
+                   }
+                   if (userEnteredGrade >= 60 && userEnteredGrade <= 66) {
+                       System.out.println("D");
+                   }
+                   if (userEnteredGrade >= 67 && userEnteredGrade <= 79) {
+                       System.out.println("C");
+                   }
+                   if (userEnteredGrade >= 80 && userEnteredGrade <= 87) {
+                       System.out.println("B");
+                   }
+                   if (userEnteredGrade >= 88 && userEnteredGrade <= 100) {
+                       System.out.println("A");
+                   }
+
+               }
            }
+       }
     }
 }
