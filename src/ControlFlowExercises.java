@@ -72,14 +72,12 @@ public class ControlFlowExercises {
            //For numbers which are multiples of both three and five: print “FizzBuzz”.
 
            for (int i = 1; i <= 100; i++) {
-               if (i % 2 == 0) {
-                   System.out.println(i);
+               if (i % 3 == 0 && i % 5 == 0) {
+                   System.out.println("FizzBuzz");
                } else if (i % 3 == 0) {
                    System.out.println("Fizz");
                } else if (i % 5 == 0) {
                    System.out.println("Buzz");
-               } else if (i % 3 == 1 && i % 5 == 1) {
-                   System.out.println("FizzBuzz");
                } else {
                    System.out.println(i);
                }
@@ -91,6 +89,8 @@ public class ControlFlowExercises {
     //Ask if the user wants to continue.
     //Assume that the user will enter valid data.
     //Only continue if the user agrees to.
+
+
 
 //---------------------------Convert given number grades into letter grades------------------------------
     //Prompt the user for a numerical grade from 0 to 100.
