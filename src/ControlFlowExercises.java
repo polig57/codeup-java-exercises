@@ -2,11 +2,11 @@ public class ControlFlowExercises {
    public static void main(String[] args) {
 //---------------------------While Loop------------------------------
 //     {
-        // Create an integer variable i with a value of 5.
+       // Create an integer variable i with a value of 5.
 //           int i = 5;
-        // Create a while loop that runs so long as i is less than or equal to 15
+       // Create a while loop that runs so long as i is less than or equal to 15
 //           while (i <= 15) {
-                // Each loop iteration, output the current value of i, then increment i by one.
+       // Each loop iteration, output the current value of i, then increment i by one.
 //               System.out.println(i);
 //               i++;
 //      }
@@ -32,7 +32,7 @@ public class ControlFlowExercises {
 
 //Create a do-while loop that starts at 2, and displays the
 // number squared on each line while the number is less than 1,000,000.
-        //Needed to make int variable into a long variable to hold more numerical value
+           //Needed to make int variable into a long variable to hold more numerical value
 //           {
 //               long i = 2;
 //               do {
@@ -60,19 +60,30 @@ public class ControlFlowExercises {
 //                        System.out.println(i);
 //                    }
 //                }
-                
 //           }
-
-
 
 //---------------------------Fizz Buzz------------------------------
 // One of the most common interview questions for entry-level programmers is the FizzBuzz test.
 // Developed by Imran Ghory, the test is designed to assess basic looping and conditional logic skills.
 
-    //Write a program that prints the numbers from 1 to 100.
-    //For multiples of three: print “Fizz” instead of the number.
-    //For the multiples of five: print “Buzz”.
-    //For numbers which are multiples of both three and five: print “FizzBuzz”.
+           //Write a program that prints the numbers from 1 to 100.
+           //For multiples of three: print “Fizz” instead of the number.
+           //For the multiples of five: print “Buzz”.
+           //For numbers which are multiples of both three and five: print “FizzBuzz”.
+
+           for (int i = 1; i <= 100; i++) {
+               if (i % 2 == 0) {
+                   System.out.println(i);
+               } else if (i % 3 == 0) {
+                   System.out.println("Fizz");
+               } else if (i % 5 == 0) {
+                   System.out.println("Buzz");
+               } else if (i % 3 == 1 && i % 5 == 1) {
+                   System.out.println("FizzBuzz");
+               } else {
+                   System.out.println(i);
+               }
+           }
 
 //---------------------------Table of Powers------------------------------
     //Prompt the user to enter an integer.
