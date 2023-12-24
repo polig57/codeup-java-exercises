@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ControlFlowExercises {
    public static void main(String[] args) {
 //---------------------------While Loop------------------------------
@@ -71,17 +73,17 @@ public class ControlFlowExercises {
            //For the multiples of five: print “Buzz”.
            //For numbers which are multiples of both three and five: print “FizzBuzz”.
 
-           for (int i = 1; i <= 100; i++) {
-               if (i % 3 == 0 && i % 5 == 0) {
-                   System.out.println("FizzBuzz");
-               } else if (i % 3 == 0) {
-                   System.out.println("Fizz");
-               } else if (i % 5 == 0) {
-                   System.out.println("Buzz");
-               } else {
-                   System.out.println(i);
-               }
-           }
+//           for (int i = 1; i <= 100; i++) {
+//               if (i % 3 == 0 && i % 5 == 0) {
+//                   System.out.println("FizzBuzz");
+//               } else if (i % 3 == 0) {
+//                   System.out.println("Fizz");
+//               } else if (i % 5 == 0) {
+//                   System.out.println("Buzz");
+//               } else {
+//                   System.out.println(i);
+//               }
+//           }
 
 //---------------------------Table of Powers------------------------------
     //Prompt the user to enter an integer.
@@ -89,6 +91,27 @@ public class ControlFlowExercises {
     //Ask if the user wants to continue.
     //Assume that the user will enter valid data.
     //Only continue if the user agrees to.
+
+           {
+               Scanner scanner = new Scanner(System.in);
+
+               System.out.println("Enter an Integer: ");
+               int userInt = scanner.nextInt();
+
+
+               String tableRow1 = "number | squared | cubed";
+               String tableRow2 = "------ | ------- | -----";
+
+               System.out.println(tableRow1);
+               System.out.println(tableRow2);
+//               System.out.println(userInt);
+
+               for (int i = 1; i <= userInt; i++) {
+                   int iSquared = i * i;
+                   int iCubed = i * iSquared;
+                   System.out.format("%s      | %s       | %s    \n", i, iSquared, iCubed);
+               }
+           }
 
 
 
