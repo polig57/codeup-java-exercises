@@ -141,7 +141,8 @@ public class ControlFlowExercises {
                    if (userEnteredGrade >= 88 && userEnteredGrade <= 100) {
                        System.out.println("A");
                    }
-
+               } else {
+                   System.out.println("User Exited.");
                }
            }
        }
